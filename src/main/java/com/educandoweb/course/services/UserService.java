@@ -27,4 +27,9 @@ public class UserService {
 		//esse metodo vai retornar o objeto que estiver em Optional
 		return obj.get();
 	}
+	
+	public User insert(User obj) {
+		//esse metodo save do repository já retorna o objeto salvado
+		return repository.save(obj);
+	}
 }

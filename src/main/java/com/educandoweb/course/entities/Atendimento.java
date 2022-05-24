@@ -29,4 +29,38 @@ public class Atendimento {
 	
 	@Column(name = "data_hora")
 	private Date dataHora;
+
+	public List<Cliente> getClientes() {
+		return clientes;
+	}
+
+	public void setClientes(List<Cliente> clientes) {
+		this.clientes = clientes;
+	}
+
+	public List<Funcionario> getFuncionarios() {
+		return funcionarios;
+	}
+
+	public void setFuncionarios(List<Funcionario> funcionarios) {
+		this.funcionarios = funcionarios;
+	}
+
+	public int getIdAtendimento() {
+		return idAtendimento;
+	}
+
+	public void setIdAtendimento(int idAtendimento) {
+		this.idAtendimento = idAtendimento;
+	}
+
+	public Date getDataHora() {
+		return dataHora;
+	}
+
+	public void setDataHora(Date dataHora) {
+		this.dataHora = dataHora;
+	}
+	
+	
 }
